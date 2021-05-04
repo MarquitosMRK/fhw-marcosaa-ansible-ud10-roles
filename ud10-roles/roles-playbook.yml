@@ -1,0 +1,8 @@
+---
+- name: Gestion Aplicaciones
+  hosts: webservers
+  become: yes
+  roles:
+    - envprep
+    - nginx
+    - deployhtml
