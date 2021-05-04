@@ -1,0 +1,8 @@
+---
+- name: playbook de debug
+  hosts: all
+
+  tasks:  
+    - name: Hola mundo
+      debug:
+        msg: El entorno es {{ env }}
